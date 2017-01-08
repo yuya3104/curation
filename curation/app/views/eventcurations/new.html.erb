@@ -1,0 +1,36 @@
+<!-- 投稿のページ -->
+
+<% if logged_in? %>
+  <div class="row">
+    <%= form_for(@eventcuration, html: { multipart: true }) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <aside class="col-md-2">
+      <br> 
+       <%= render 'shared/eventcuration_form2', f:f %>
+    </aside>
+    
+    <aside class="col-md-12">
+        <%= f.file_field :picture %>
+        
+    </aside>
+    
+    <aside class="col-md-2">
+      <br>
+       <%= render 'shared/eventcuration_form3', f:f %>
+    </aside>
+    
+    <aside class="col-md-11">
+      <section class="eventcuration_form">
+        <%= render 'shared/eventcuration_form', f:f %>
+      </section>
+    </aside>
+    
+     <aside class="col-md-2">
+      <section class="eventcuration_form">
+        <%= render 'shared/eventcuration_form4', f:f %>
+      </section>
+    </aside>
+   <% end %>
+  </div>
+
+<% end %>

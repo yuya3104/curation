@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+
+
+
+/*
+------------------------------------------------------------*/
+div#cource {
+	margin: 40px auto 40px auto;
+	width: 960px;
+	height: auto;
+}
+div#cource h2 {
+	font-size: 25px;
+	font-weight: 900;
+	
+	margin-bottom: 60px;
+	
+}
+p#h2_text {
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 20px;
+}
+#cource_list {
+	width: 960px;
+	/*height: 300px;*/
+}
+#cource_list li {
+	width: 300px;
+	height: auto;
+	border: 1px solid #cdcdcd;
+	float: left;
+	margin-right: 20px;
+}
+
+
+#cource_list li#last {
+	margin-right: 0px;
+}
+
+#cource_list li p.list_image {
+	width: 300px;
+	height: 220px;
+}
+#cource_list li h3 {
+	margin: 30px 30px 30px 30px;
+}
+#cource_list li h3 a {
+	font-size: 14px;
+	font-weight: 900;
+	color: #e73a51;
+	text-decoration: none;
+}
+#cource_list li p.list_text {
+	margin: 20px 20px 20px 20px;
+	font-size: 12px;
+	line-height: 10px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#cource_list {
+	width: 1200px;
+	/*height: 300px;*/
+}
+#cource_list li {
+	width: 305px;
+	height: auto;
+	border: 1px solid #cdcdcd;
+	float: left;
+	margin: 10px 20px 40px 0px;
+}
+#cource_list li#last {
+	margin-right: 0px;
+}
+
+#cource_list li p.list_image {
+	width: 305px;
+	height: 240px;
+	text-align: center;
+}
+
+#cource_list li p.list_image img {
+	margin: 0 auto;
+
+}
+
+#cource_list li h3 {
+	margin: 20px 20px 10px 20px;
+}
+#cource_list li h3 a {
+	font-size: 14px;
+	font-weight: 900;
+	color: #2B618F;
+	text-decoration: none;
+}
+#cource_list li p.list_text {
+	margin: 0 20px 10px 20px;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+
+p.list_image a:hover {
+ position: relative;
+ top: -8px;
+ left: 0px;
+}
+a img{
+  opacity: 1;
+  transition: 0.3s;
+}
+a:hover img{
+  opacity: .5;
+}
+
+p.list_image img {
+	width:auto;
+	height:auto;
+
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+/* ★★ 04.フッター
+------------------------------------------------------------*/
+
+div#footer-inner {
+	margin: 0 auto 0 auto;
+	width: 960px;
+}
+p#copyright {
+	float: left;
+	color: #000000;
+	font-size: 12px;
+	font-weight: 600;
+}
+p#pagetop {
+	float: right;
+}
+p#pagetop a {
+	font-size: 12px;
+	font-weight: 800;
+	color: #000000;
+	text-decoration: none;
+}

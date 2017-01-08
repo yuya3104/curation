@@ -1,2 +1,156 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8"><!-- ← 文字コードの宣言。一般的にはUTF-8を指定する。-->
+  <meta name="description" content="#"><!-- ← 検索結果でのサイト説明文を#に入力する。-->
+  <meta name="keywords" content="#,#,#"><!-- ← サイトに関係する重要なキーワードを#に入力する。,(コンマ)で複数指定できる。優先順位順に指定すると良い。 -->
+  <title>Colorful World | イロトリドリのセカイを、キミに。</title><!-- ← サイトのタイトルを入れます。-->
+
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  <!-- ←スタイルシート（style.cssを読み込むためのコードです。href="#"の#の書き方を間違えてしまうと、cssが適応されないので注意。 -->
+
+</head>
+
+
+	<!-- ★★ 02.メインビジュアルここまで↑↑ -->
+
+
+
+
+	<!-- ★★ 03.NESTschoolの主なコース ここから↓↓↓↓ -->
+	<div id="cource">
+
+	
+
+		
+		<p id="h2_text">
+		<!-- ★★ 何かコメント入れる・・ -->
+
+		</p>
+
+
+
+
+		
+
+
+
+
+			
+			<div class="clear"></div>
+		</ul>
+
+
+		<h2></h2>
+		<p id="h2_text">
+		
+
+
+
+		<!-- ★★ 何かコメント入れる・・ -->
+
+		</p>
+
+		
+
+
+		<!-- ★★ 何かコメント入れる・・ -->
+
+		</p>
+
+
+<h2></h2>
+		<p id="h2_text">
+	
+
+
+
+
+		<CENTER>
+		<h2>Now Trending in your city</h2>
+		<p id="h2_text">
+		<!-- ★★ 何かコメント入れる・・ -->
+		</p>
+		</CENTER>
+
+
+		
+
+
+
+		<ul id="cource_list">
+			<% if current_user.present? %>
+        <div class="row">
+		
+         <div class="col-md-12">
+          <font size="3">★Your Post News</font>
+           <% if (logged_in? &&@mynews.present?) %>
+	         <ol class="eventcurations">
+	         	
+	         <%= render @mynews %>	
+
+			  </ol>
+            <% end %>
+        </div>
+
+         <div class="col-md-12">
+          <font size="3">★Your Post Reports</font>
+           <% if (logged_in? &&@myreports.present?) %>
+	         <ol class="eventcurations">
+	         	
+	         <%= render @myreports %>	
+
+			  </ol>
+            <% end %>
+        </div>
+  
+        
+    <% end %>    
+					
+      <div class="col-md-12">
+           
+            
+			<font size="3">★News Time Line</font>
+	           <ol class="eventcurations">
+	           <%= render @news if @news.present? %>
+	           </ol>
+           
+        </div>
+        
+             <div class="col-md-12">
+           
+            
+			<font size="3">★Report Time Line</font>
+	           <ol class="eventcurations">
+	           <%= render @reports if @reports.present? %>
+	           </ol>
+           
+        </div>
+			
+
+<!-- @user は current_userはログインしていないと nil
+  -->
+  
+
+
+
+	</div><!-- ← #cource閉じる -->
+
+
+
+
+	<!-- ★★ 04.フッター ここから↓↓ -->
+
+	<footer>
+		<div id="footer-inner">
+			<p id="copyright"></p>
+			<p id="pagetop"><a href="#"></a></p>
+			<div class="clear"></div>
+		</div>
+	</footer>
+	<!-- ★★ 04.フッター ここまで↑↑ -->
+
+</body>
+
+</html>

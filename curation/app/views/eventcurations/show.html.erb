@@ -1,0 +1,20 @@
+
+<% if @article.date.present? %>
+<%= @article.date.strftime("%Y年%m月%d日") %>
+<% end %>
+
+<h1>
+<%= @article.title.present? ? @article.present : "無題" %>
+</h1>
+
+<% if @article.picture.present? %>
+<%= image_tag(@article.picture, alt:"thumbnail") %>
+<% else %>
+<%= image_tag("no-image.png", {size:"180x180", alt:"no-image"}) %>
+<% end %>
+
+<div class="curationcontent">
+<%= @article.content.html_safe %>    
+    
+    
+</div>

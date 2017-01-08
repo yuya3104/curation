@@ -1,0 +1,21 @@
+<li id="eventcurations-<%= eventcuration.id %>">
+		<p class="list_image">
+			<% if eventcuration.picture.present? %>
+				<%= image_tag(eventcuration.picture) %>
+			<% else %>
+			   <%= image_tag('no-image.png', alt:"画像なし", height:"240px") %>
+			<% end %>
+		</p>
+		<h3>
+			<%= link_to eventcuration.title, eventcuration_path(eventcuration) %> 
+			<br><font size="2">イベント日：<%= eventcuration.date %></font>
+		</h3>
+		<p class="list_text">
+			<%= eventcuration.content.strip_tags.truncate(25) if eventcuration.content.present?  %>
+		</p>
+		
+		<p class="list_string">
+			&nbsp&nbsp&nbsp<%= link_to eventcuration.user.name, eventcuration_path(eventcuration)  %>
+		</p>
+	
+</li>
