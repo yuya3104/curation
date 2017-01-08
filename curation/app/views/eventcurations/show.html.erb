@@ -4,7 +4,7 @@
 <% end %>
 
 <h1>
-<%= @article.title.present? ? @article.present : "無題" %>
+<%= @article.title.present? ? @article.title : "無題" %>
 </h1>
 
 <% if @article.picture.present? %>
